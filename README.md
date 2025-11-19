@@ -1,99 +1,117 @@
-# Flutter Chat Bot 🤖
+Mijara we li ser projeyek **Flutter Chat Bot**-a nûjen e, ku bi **Gemini AI API** ya Google ve tê xebitandin û bi prensîbên **Mîmariya Paqij (Clean Architecture)** û **Vejandina Girêdanê (Dependency Injection)** hatiye çêkirin.
 
-A modern Flutter chat application powered by Google's Gemini AI API, built with clean architecture principles and dependency injection.
+Li jêr, wergera Kurdî (Sorani) ya README-ya we heye:
 
-## 📱 Screenshots
+-----
 
-*Add your app screenshots here*
+# چات بۆتی فڵەتەر 🤖 (Chat Bot-i Flater)
 
-| Home Screen | Chat Interface | Settings |
+ئەپڵیکەیشنێکی چاتی فڵەتەری مۆدێرنە کە بە APIـی Gemini AIـی گووگڵ بەهێز کراوە، بە بنەماکانی **ئەندازەی پاک (Clean Architecture)** و **دانانی پشتبەستن (Dependency Injection)** دروست کراوە.
+
+## 📱 وێنەی شاشەکان (Wênay Şaşakan)
+
+*وێنەی شاشەی ئەپڵیکەیشنەکەت لێرە زیاد بکە*
+
+| شاشەی ماڵەوە | ڕووکاری چات | سێتینگەکان (ڕێکخستنەکان) |
 |-------------|----------------|----------|
-| ![Chat](assets/screenshots/chat.png) | 
+|  |
 
-## ✨ Features
+## ✨ تایبەتمەندییەکان (Taybetmendiyakan)
 
-- 💬 Real-time chat with Gemini AI
-- 🎨 Beautiful, modern UI with custom theming
-- 💾 Local data persistence with SharedPreferences
-- 🏗️ Clean Architecture with dependency injection
-- 🔄 Offline support with local caching
-- 📱 Cross-platform support (iOS, Android, Web, Windows, macOS, Linux)
-- 🎯 Smart coaching feature
-- 🔐 Secure API key management
+  * 💬 چاتی **ڕاستەوخۆ** لەگەڵ Gemini AI
+  * 🎨 **ڕووکارێکی جوان و مۆدێرن** لەگەڵ ڕێکخستنی شێوازی تایبەت (custom theming)
+  * 💾 **پاراستنی دراوەی ناوخۆیی** (Local data persistence) بە بەکارهێنانی SharedPreferences
+  * 🏗️ **ئەندازەی پاک** لەگەڵ دانانی پشتبەستن (DI)
+  * 🔄 پشتگیری **دەرەوەی هێڵ** (Offline support) لەگەڵ پاشەکەوتی ناوخۆیی (local caching)
+  * 📱 پشتگیری بۆ **سەرجەم پلاتفۆرمەکان** (Cross-platform) (iOS, Android, Web, Windows, macOS, Linux)
+  * 🎯 تایبەتمەندی **ڕاهێنانی زیرەک** (Smart coaching feature)
+  * 🔐 بەڕێوەبردنی **کلیلە APIـی پارێزراو** (Secure API key management)
 
-## 🏗️ Architecture
+## 🏗️ ئەندازە (Architecture)
 
-This project follows Clean Architecture principles with the following layers:
+ئەم پڕۆژەیە بە بنەماکانی ئەندازەی پاک کار دەکات بەم چینانەی خوارەوە:
 
 ```
 lib/
 ├── core/
-│   ├── api_layer/          # API services (Gemini AI)
-│   ├── di/                 # Dependency injection configuration
-│   ├── keys/               # Shared preference keys
-│   ├── modules/            # DI modules (Dio, SharedPreferences)
-│   ├── route/              # App routing
-│   ├── theme/              # App theming
-│   ├── utils/              # Utilities (caching, components)
-│   └── App.dart            # Main app widget
+│   ├── api_layer/            # خزمەتگوزارییەکانی API (Gemini AI)
+│   ├── di/                   # ڕێکخستنی دانانی پشتبەستن (Dependency injection)
+│   ├── keys/                 # کلیلی Shared preference
+│   ├── modules/              # مۆدیوڵەکانی DI (Dio, SharedPreferences)
+│   ├── route/                # ڕێڕەوی ئەپڵیکەیشن
+│   ├── theme/                # شێوازی ئەپڵیکەیشن (Theming)
+│   ├── utils/                # ئامرازەکان (Caching, Components)
+│   └── App.dart              # وێجێتی سەرەکی ئەپڵیکەیشن
 ├── features/
-│   ├── home/               # Home feature
-│   └── smart_coach/        # Smart coach feature
-│       ├── data/           # Data layer
+│   ├── home/                 # تایبەتمەندی ماڵەوە
+│   └── smart_coach/          # تایبەتمەندی ڕاهێنەری زیرەک
+│       ├── data/             # چینی دراوە (Data layer)
 │       │   ├── data_source/
 │       │   ├── models/
 │       │   └── repo_impl/
-│       ├── domain/         # Domain layer
+│       ├── domain/           # چینی دۆمەین (Domain layer)
 │       │   ├── entities/
 │       │   └── repo/
-│       ├── extensions/     # Feature extensions
-│       ├── presentation/   # Presentation layer
+│       ├── extensions/       # درێژکراوەکانی تایبەتمەندی
+│       ├── presentation/     # چینی پێشکەشکردن (Presentation layer)
 │       │   ├── view/
 │       │   ├── view_model/
 │       │   └── widgets/
 └── main.dart
 ```
 
-## 🚀 Getting Started
+## 🚀 دەستپێکردن (Getting Started)
 
-### Prerequisites
+### پێداویستییەکان (Prerequisites)
 
-- Flutter SDK (3.0.0 or higher)
-- Dart SDK (3.0.0 or higher)
-- A Google Gemini API key
+  * Flutter SDK (3.0.0 یان بەرزتر)
+  * Dart SDK (3.0.0 یان بەرزتر)
+  * کلیلێکی Gemini API ی گووگڵ
 
-### Installation
+### دامەزراندن (Installation)
 
-1. Clone the repository:
+1.  کۆدەکە کۆپی بکە (Clone the repository):
+
+<!-- end list -->
+
 ```bash
 git clone https://github.com/darbazrasul/flutter_with_gemini.git
 cd flutter_chat_bot
 ```
 
-2. Install dependencies:
+2.  پشتبەستنەکان (dependencies) دابمەزرێنە:
+
+<!-- end list -->
+
 ```bash
 flutter pub get
 ```
 
-3. Run build_runner to generate dependency injection code:
+3.  `build_runner` بەکاربهێنە بۆ دروستکردنی کۆدی دانانی پشتبەستن:
+
+<!-- end list -->
+
 ```bash
 flutter pub run build_runner build --delete-conflicting-outputs
 ```
 
-4. Run the app:
+4.  ئەپڵیکەیشنەکە بەگەڕ بخە:
+
+<!-- end list -->
+
 ```bash
 flutter run
 ```
 
-## 🔑 API Key Configuration
+## 🔑 ڕێکخستنی کلیلە API (API Key Configuration)
 
-The app requires a Gemini API key to function. You can obtain one from [Google AI Studio](https://makersuite.google.com/app/apikey).
+ئەپڵیکەیشنەکە پێویستی بە کلیلێکی Gemini API هەیە بۆ کارکردن. دەتوانیت یەکێکیان لە [Google AI Studio](https://makersuite.google.com/app/apikey) بەدەست بهێنیت.
 
-The API key is stored securely using SharedPreferences. On first launch, the app will prompt you to enter your API key.
+کلیلی API بە شێوەیەکی پارێزراو بە بەکارهێنانی **SharedPreferences** هەڵدەگیرێت. لە یەکەم لادان (launch)دا، ئەپڵیکەیشنەکە داوات لێ دەکات کلیلی APIـی خۆت داخڵ بکەیت.
 
-### Code Implementation
+### جێبەجێکردنی کۆد (Code Implementation)
 
-The `GeminiApiService` handles all communication with the Gemini AI:
+`GeminiApiService` هەموو پەیوەندییەکان لەگەڵ Gemini AI بەڕێوە دەبات:
 
 ```dart
 import 'package:fluter_chat_bot/core/keys/shared_key.dart';
@@ -103,129 +121,135 @@ import 'package:injectable/injectable.dart';
 
 @lazySingleton
 class GeminiApiService {
-  final SharedPrefHelper sharedPrefHelper;
-  
-  GeminiApiService(this.sharedPrefHelper);
-  
-  Future<String> sendMessage(String userMessage) async {
-    try {
-      final apiKey = sharedPrefHelper.getValue(SharedPrefKeys.apiKey);
-      if (apiKey == null || apiKey.isEmpty) {
-        throw Exception('Gemini API key not found in SharedPreferences');
-      }
-      
-      final model = GenerativeModel(
-        model: "gemini-2.0-flash", 
-        apiKey: apiKey
-      );
-      
-      final content = [Content.text(userMessage)];
-      final response = await model.generateContent(content);
-      
-      if (response.text != null && response.text!.isNotEmpty) {
-        return response.text!;
-      } else {
-        return 'No response from AI';
-      }
-    } catch (e) {
-      return 'Error: ${e.toString()}';
-    }
-  }
+  final SharedPrefHelper sharedPrefHelper;
+  
+  GeminiApiService(this.sharedPrefHelper);
+  
+  Future<String> sendMessage(String userMessage) async {
+    try {
+      final apiKey = sharedPrefHelper.getValue(SharedPrefKeys.apiKey);
+      if (apiKey == null || apiKey.isEmpty) {
+        throw Exception('Gemini API key not found in SharedPreferences');
+      }
+      
+      final model = GenerativeModel(
+        model: "gemini-2.0-flash", 
+        apiKey: apiKey
+      );
+      
+      final content = [Content.text(userMessage)];
+      final response = await model.generateContent(content);
+      
+      if (response.text != null && response.text!.isNotEmpty) {
+        return response.text!;
+      } else {
+        return 'No response from AI';
+      }
+    } catch (e) {
+      return 'Error: ${e.toString()}';
+    }
+  }
 }
 ```
 
-## 📦 Dependencies
+## 📦 پشتبەستنەکان (Dependencies)
 
-Key dependencies used in this project:
+پشتبەستنە سەرەکییەکان کە لەم پڕۆژەیەدا بەکارهێنراون:
 
-- `google_generative_ai` - Google's Gemini AI SDK
-- `injectable` - Dependency injection
-- `get_it` - Service locator
-- `shared_preferences` - Local data storage
-- `dio` - HTTP client
-- `flutter_bloc` / `cubit` - State management
+  * `google_generative_ai` - SDKـی Gemini AIـی گووگڵ
+  * `injectable` - دانانی پشتبەستن (Dependency injection)
+  * `get_it` - شوێندانەری خزمەتگوزاری (Service locator)
+  * `shared_preferences` - هەڵگرتنی دراوەی ناوخۆیی
+  * `dio` - کڕیاری HTTP
+  * `flutter_bloc` / `cubit` - بەڕێوەبردنی بار (State management)
 
-## 🎨 Theming
+## 🎨 شێواز (Theming)
 
-The app includes a comprehensive theming system with:
-- Custom colors
-- Custom fonts
-- Custom styles
-- Dark/Light mode support
+ئەپڵیکەیشنەکە سیستەمێکی شێوازی گشتگیر لەخۆدەگرێت لەگەڵ:
 
-## 📁 Project Structure Details
+  * ڕەنگە تایبەتەکان
+  * فۆنتە تایبەتەکان
+  * ستایلە تایبەتەکان
+  * پشتگیری شێوازی تاریک/ڕووناک (Dark/Light mode)
 
-### Core Layer
-- **api_layer**: Contains API service implementations
-- **di**: Dependency injection setup using Injectable
-- **modules**: Shared modules (Dio, SharedPreferences)
-- **route**: Navigation and routing configuration
-- **theme**: App-wide theming
-- **utils**: Helper utilities and reusable components
+## 📁 وردەکاری پێکهاتەی پڕۆژە (Project Structure Details)
 
-### Feature Layer
-Each feature follows clean architecture:
-- **data**: Data sources, models, and repository implementations
-- **domain**: Business entities and repository interfaces
-- **presentation**: UI, ViewModels, and widgets
+### چینی Core
 
-## 🛠️ Development
+  * **api\_layer**: جێبەجێکردنی خزمەتگوزارییەکانی API لەخۆدەگرێت
+  * **di**: ڕێکخستنی دانانی پشتبەستن بە بەکارهێنانی Injectable
+  * **modules**: مۆدیوڵە هاوبەشەکان (Dio, SharedPreferences)
+  * **route**: ڕێکخستنی ناڤیگەیشن و ڕێڕەو
+  * **theme**: شێوازی سەرانسەری ئەپڵیکەیشن
+  * **utils**: ئامرازە یارمەتیدەرەکان و پێکهاتە دووبارە بەکارهێنراوەکان
 
-### Generate Code
+### چینی Features
 
-Run this command to generate dependency injection and serialization code:
+هەر تایبەتمەندییەک شوێنی ئەندازەی پاک دەکەوێت:
+
+  * **data**: سەرچاوەکانی دراوە، مۆدێلەکان، و جێبەجێکردنی ڕیپۆزیتۆری
+  * **domain**: قەوارەکانی بازرگانی و ڕووکارەکانی ڕیپۆزیتۆری (repository interfaces)
+  * **presentation**: ڕووکاری بەکارهێنەر (UI)، ViewModels، و وێجێتەکان
+
+## 🛠️ گەشەپێدان (Development)
+
+### دروستکردنی کۆد (Generate Code)
+
+ئەم فەرمانە بەکاربهێنە بۆ دروستکردنی کۆدی دانانی پشتبەستن و زنجیرەیی کردن:
 
 ```bash
 flutter pub run build_runner watch --delete-conflicting-outputs
 ```
 
-### Add New Features
+### زیادکردنی تایبەتمەندی نوێ (Add New Features)
 
-1. Create a new feature folder in `lib/features/`
-2. Follow the clean architecture structure
-3. Register dependencies in the DI configuration
-4. Add routes in `lib/core/route/`
+1.  فۆڵدەرێکی تایبەتمەندی نوێ لە `lib/features/` دروست بکە
+2.  شوێنی پێکهاتەی ئەندازەی پاک بکەوە
+3.  پشتبەستنەکان لە ڕێکخستنی DI تۆمار بکە
+4.  ڕێڕەوەکان (routes) لە `lib/core/route/` زیاد بکە
 
-## 📸 Adding Screenshots
+## 📸 زیادکردنی وێنەی شاشە (Adding Screenshots)
 
-To add screenshots to the README:
+بۆ زیادکردنی وێنەی شاشە بۆ README:
 
-1. Create a `screenshots` folder in the project root
-2. Add your screenshot images (PNG or JPG recommended)
-3. Update the screenshot section in this README with proper paths
+1.  فۆڵدەرێکی `screenshots` لە ڕەگی پڕۆژەکەدا دروست بکە
+2.  وێنەکانی شاشەی خۆت زیاد بکە (PNG یان JPG پێشنیار دەکرێت)
+3.  بەشی وێنەی شاشە لەم READMEـیەدا نوێ بکەوە بە ڕێڕەوی گونجاو
 
-Recommended screenshot sizes:
-- Mobile: 1080x2340px (16:9 aspect ratio)
-- Tablet: 1200x1600px
-- Desktop: 1920x1080px
+قەبارەی پێشنیارکراوی وێنەی شاشە:
 
-## 🤝 Contributing
+  * مۆبایل: 1080x2340px (ڕێژەی لایەن 16:9)
+  * تابلێت: 1200x1600px
+  * دێسک تۆپ: 1920x1080px
 
-Contributions are welcome! Please follow these steps:
+## 🤝 بەشداریکردن (Contributing)
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+بەشداریکردن بەخێرهاتن\! تکایە ئەم هەنگاوانە پەیڕەو بکە:
 
-## 📄 License
+1.  پڕۆژەکە Fork بکە
+2.  لقێکی تایبەتمەندی خۆت دروست بکە (`git checkout -b feature/AmazingFeature`)
+3.  گۆڕانکارییەکانت جێگیر بکە (`git commit -m 'Add some AmazingFeature'`)
+4.  بۆ لقەکە پاڵ بنێ (`git push origin feature/AmazingFeature`)
+5.  داواکاری ڕاکێشانێک (Pull Request) بکەرەوە
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📄 مۆڵەتنامە (License)
 
-## 👨‍💻 Author
-Darbaz Rasul  - [@darbazrasul](https://github.com/darbazrasul)
+ئەم پڕۆژەیە بە مۆڵەتنامەی MIT مۆڵەتی پێدراوە - بڕوانە فایلی LICENSE بۆ وردەکاری زیاتر.
 
-## 🙏 Acknowledgments
+## 👨‍💻 نووسەر (Author)
 
-- Google Gemini AI for the powerful AI capabilities
-- Flutter team for the amazing framework
-- All contributors who help improve this project
+درباز ڕەسوڵ (Darbaz Rasul) - [@darbazrasul](https://github.com/darbazrasul)
 
-## 📞 Support
+## 🙏 سوپاس و پێزانین (Acknowledgments)
 
-For support, email your.email@example.com or open an issue in the GitHub repository.
+  * Gemini AIـی گووگڵ بۆ تواناکانی بەهێزی ژیری دەستکرد (AI)
+  * تیمی فڵەتەر بۆ چوارچێوەی سەرسوڕهێنەر
+  * سەرجەم بەشداربووان کە یارمەتی باشترکردنی ئەم پڕۆژەیە دەدەن
 
----
+## 📞 پشتگیری (Support)
 
-Made with ❤️ using Flutter
+بۆ پشتگیری، ئیمەیڵ بۆ darbazrasul721@gmail.com بنێرە یان کێشەیەک لە ڕیپۆزیتۆری GitHub بکەرەوە.
+
+-----
+
+بە ❤️ دروست کراوە بە بەکارهێنانی Flutter
