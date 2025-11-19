@@ -1,7 +1,7 @@
 import 'dart:convert';
-import 'package:fluter_chat_bot/modules/shared_preferences_module.dart';
-import 'package:fluter_chat_bot/smart_coach/data/data_source/interfac/chat_local_datasource.dart';
-import 'package:fluter_chat_bot/smart_coach/domain/entites/chat_message.dart';
+import 'package:fluter_chat_bot/core/modules/shared_preferences_module.dart';
+import 'package:fluter_chat_bot/features/smart_coach/data/data_source/interfac/chat_local_datasource.dart';
+import 'package:fluter_chat_bot/features/smart_coach/domain/entites/chat_message.dart';
 import 'package:injectable/injectable.dart';
 
 @Singleton(as: ChatLocalDataSource)

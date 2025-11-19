@@ -12,13 +12,13 @@
 import 'package:dio/dio.dart' as _i361;
 import 'package:fluter_chat_bot/core/api_layar/gemini_api_service.dart'
     as _i356;
-import 'package:fluter_chat_bot/smart_coach/data/data_source/impl/chat_local_data_source_impl.dart'
+import 'package:fluter_chat_bot/features/smart_coach/data/data_source/impl/chat_local_data_source_impl.dart'
     as _i82;
-import 'package:fluter_chat_bot/smart_coach/data/data_source/interfac/chat_local_datasource.dart'
+import 'package:fluter_chat_bot/features/smart_coach/data/data_source/interfac/chat_local_datasource.dart'
     as _i366;
-import 'package:fluter_chat_bot/smart_coach/domain/repo/chat_repository.dart'
+import 'package:fluter_chat_bot/features/smart_coach/domain/repo/chat_repository.dart'
     as _i781;
-import 'package:fluter_chat_bot/smart_coach/presentation/view_model/chat_cubit.dart'
+import 'package:fluter_chat_bot/features/smart_coach/presentation/view_model/chat_cubit.dart'
     as _i686;
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
@@ -27,8 +27,6 @@ import 'package:shared_preferences/shared_preferences.dart' as _i460;
 
 import '../modules/dio_module.dart' as _i948;
 import '../modules/shared_preferences_module.dart' as _i744;
-
-import '../core/utils/validator.dart' as _i449;
 
 extension GetItInjectableX on _i174.GetIt {
   Future<_i174.GetIt> init({
@@ -45,7 +43,6 @@ extension GetItInjectableX on _i174.GetIt {
       () => sharedPreferencesModule.provideSharedPreferences(),
       preResolve: true,
     );
-    gh.lazySingleton<_i449.Validator>(() => _i449.Validator());
     gh.singleton<_i744.SharedPrefHelper>(
       () => _i744.SharedPrefHelper(gh<_i460.SharedPreferences>()),
     );

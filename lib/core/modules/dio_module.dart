@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:fluter_chat_bot/modules/shared_preferences_module.dart';
+import 'package:fluter_chat_bot/core/modules/shared_preferences_module.dart';
 import 'package:injectable/injectable.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 

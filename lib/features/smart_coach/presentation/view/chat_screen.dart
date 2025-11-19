@@ -1,6 +1,6 @@
-import 'package:fluter_chat_bot/modules/service_locator.dart';
-import 'package:fluter_chat_bot/smart_coach/presentation/view_model/chat_cubit.dart';
-import 'package:fluter_chat_bot/smart_coach/presentation/widgets/shared_scaffold.dart';
+import 'package:fluter_chat_bot/core/di/di.dart';
+import 'package:fluter_chat_bot/features/smart_coach/presentation/view_model/chat_cubit.dart';
+import 'package:fluter_chat_bot/features/smart_coach/presentation/widgets/shared_scaffold.dart';
 import 'package:fluter_chat_bot/core/theme/app_assets.dart';
 import 'package:fluter_chat_bot/core/theme/app_colors.dart';
 import 'package:fluter_chat_bot/core/theme/app_styles.dart';

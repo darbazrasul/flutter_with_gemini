@@ -1,6 +1,6 @@
 import 'package:fluter_chat_bot/core/api_layar/gemini_api_service.dart';
-import 'package:fluter_chat_bot/smart_coach/data/data_source/interfac/chat_local_datasource.dart';
-import 'package:fluter_chat_bot/smart_coach/domain/entites/chat_message.dart';
+import 'package:fluter_chat_bot/features/smart_coach/data/data_source/interfac/chat_local_datasource.dart';
+import 'package:fluter_chat_bot/features/smart_coach/domain/entites/chat_message.dart';
 import 'package:injectable/injectable.dart';
 
 @singleton

@@ -1,5 +1,5 @@
-import 'package:fluter_chat_bot/smart_coach/domain/entites/chat_message.dart';
-import 'package:fluter_chat_bot/smart_coach/domain/repo/chat_repository.dart';
+import 'package:fluter_chat_bot/features/smart_coach/domain/entites/chat_message.dart';
+import 'package:fluter_chat_bot/features/smart_coach/domain/repo/chat_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 

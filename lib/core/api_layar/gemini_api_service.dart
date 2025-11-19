@@ -1,5 +1,5 @@
-import 'package:fluter_chat_bot/modules/shared_key.dart';
-import 'package:fluter_chat_bot/modules/shared_preferences_module.dart';
+import 'package:fluter_chat_bot/core/keys/shared_key.dart';
+import 'package:fluter_chat_bot/core/modules/shared_preferences_module.dart';
 import 'package:google_generative_ai/google_generative_ai.dart';
 import 'package:injectable/injectable.dart';
 
