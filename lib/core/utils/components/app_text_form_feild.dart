@@ -1,4 +1,4 @@
-import 'package:fluter_chat_bot/theme/app_colors.dart';
+import 'package:fluter_chat_bot/core/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

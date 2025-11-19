@@ -10,7 +10,8 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:dio/dio.dart' as _i361;
-import 'package:fluter_chat_bot/gemini_api_service.dart' as _i356;
+import 'package:fluter_chat_bot/core/api_layar/gemini_api_service.dart'
+    as _i356;
 import 'package:fluter_chat_bot/smart_coach/data/data_source/impl/chat_local_data_source_impl.dart'
     as _i82;
 import 'package:fluter_chat_bot/smart_coach/data/data_source/interfac/chat_local_datasource.dart'
@@ -27,10 +28,9 @@ import 'package:shared_preferences/shared_preferences.dart' as _i460;
 import '../modules/dio_module.dart' as _i948;
 import '../modules/shared_preferences_module.dart' as _i744;
 
-import '../utils/validator.dart' as _i449;
+import '../core/utils/validator.dart' as _i449;
 
 extension GetItInjectableX on _i174.GetIt {
-  // initializes the registration of main-scope dependencies inside of GetIt
   Future<_i174.GetIt> init({
     String? environment,
     _i526.EnvironmentFilter? environmentFilter,

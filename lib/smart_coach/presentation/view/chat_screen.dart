@@ -1,9 +1,9 @@
 import 'package:fluter_chat_bot/modules/service_locator.dart';
 import 'package:fluter_chat_bot/smart_coach/presentation/view_model/chat_cubit.dart';
 import 'package:fluter_chat_bot/smart_coach/presentation/widgets/shared_scaffold.dart';
-import 'package:fluter_chat_bot/theme/app_assets.dart';
-import 'package:fluter_chat_bot/theme/app_colors.dart';
-import 'package:fluter_chat_bot/theme/app_styles.dart';
+import 'package:fluter_chat_bot/core/theme/app_assets.dart';
+import 'package:fluter_chat_bot/core/theme/app_colors.dart';
+import 'package:fluter_chat_bot/core/theme/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -90,10 +90,8 @@ class _ChatScreenBodyState extends State<ChatScreenBody> {
                               ),
                               decoration: BoxDecoration(
                                 color: isUser
-                                    // ignore: deprecated_member_use
-                                    ? AppColors.black.withOpacity(0.5)
-                                    // ignore: deprecated_member_use
-                                    : AppColors.white.withOpacity(0.15),
+                                    ? AppColors.black.withValues(alpha: 0.5)
+                                    : AppColors.white.withValues(alpha: 0.15),
                                 borderRadius: BorderRadius.circular(16.r),
                               ),
                               child: Text(

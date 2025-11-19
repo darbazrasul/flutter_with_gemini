@@ -1,11 +1,11 @@
 import 'package:fluter_chat_bot/smart_coach/extensions/project_extensions.dart';
 import 'package:fluter_chat_bot/smart_coach/presentation/view/chat_screen.dart';
 import 'package:fluter_chat_bot/smart_coach/presentation/widgets/shared_scaffold.dart';
-import 'package:fluter_chat_bot/theme/app_assets.dart';
-import 'package:fluter_chat_bot/theme/app_colors.dart';
-import 'package:fluter_chat_bot/theme/app_styles.dart';
-import 'package:fluter_chat_bot/utils/components/custom_button.dart';
-import 'package:fluter_chat_bot/utils/shared_blured_container.dart';
+import 'package:fluter_chat_bot/core/theme/app_assets.dart';
+import 'package:fluter_chat_bot/core/theme/app_colors.dart';
+import 'package:fluter_chat_bot/core/theme/app_styles.dart';
+import 'package:fluter_chat_bot/core/utils/components/custom_button.dart';
+import 'package:fluter_chat_bot/core/utils/shared_blured_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

@@ -1,6 +1,6 @@
 import 'package:fluter_chat_bot/route/app_routes.dart';
 import 'package:fluter_chat_bot/route/routes.dart';
-import 'package:fluter_chat_bot/theme/app_fonts.dart';
+import 'package:fluter_chat_bot/core/theme/app_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

@@ -1,6 +1,6 @@
-import 'package:fluter_chat_bot/theme/app_assets.dart';
-import 'package:fluter_chat_bot/theme/app_colors.dart';
-import 'package:fluter_chat_bot/theme/app_styles.dart';
+import 'package:fluter_chat_bot/core/theme/app_assets.dart';
+import 'package:fluter_chat_bot/core/theme/app_colors.dart';
+import 'package:fluter_chat_bot/core/theme/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class SharedScaffold extends StatelessWidget {

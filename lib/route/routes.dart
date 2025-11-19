@@ -2,7 +2,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:fluter_chat_bot/route/app_routes.dart';
 import 'package:fluter_chat_bot/smart_coach/extensions/project_extensions.dart';
 import 'package:fluter_chat_bot/smart_coach/presentation/view/chat_screen.dart';
-import 'package:fluter_chat_bot/theme/app_colors.dart';
+import 'package:fluter_chat_bot/core/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
 abstract class Routes {
