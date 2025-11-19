@@ -9,10 +9,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await configureDependencies();
   final sharedPrefHelper = getIt<SharedPrefHelper>();
-  await sharedPrefHelper.setValue(
-    SharedPrefKeys.apiKey,
-    "AIzaSyDQMgVAq9nMiBkoNEEMmzAD4XpQOSc87Vw",
-  );
+  await sharedPrefHelper.setValue(SharedPrefKeys.apiKey, "UrApiKey");
   await CacheService.cacheInitialization();
 
   runApp(MyApp());
