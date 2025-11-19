@@ -6,7 +6,6 @@ import 'package:injectable/injectable.dart';
 @lazySingleton
 class GeminiApiService {
   final SharedPrefHelper sharedPrefHelper;
-
   GeminiApiService(this.sharedPrefHelper);
 
   Future<String> sendMessage(String userMessage) async {
@@ -16,7 +15,6 @@ class GeminiApiService {
       if (apiKey == null || apiKey.isEmpty) {
         throw Exception('Gemini API key not found in SharedPreferences');
       }
-
       final model = GenerativeModel(model: "gemini-2.0-flash", apiKey: apiKey);
       final content = [Content.text(userMessage)];
       final response = await model.generateContent(content);

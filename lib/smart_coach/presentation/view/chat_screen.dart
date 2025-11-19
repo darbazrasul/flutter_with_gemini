@@ -48,7 +48,7 @@ class _ChatScreenBodyState extends State<ChatScreenBody> {
         if (state is ChatLoaded) messages = state.messages;
 
         return SharedScaffold(
-          title: 'Smart Coach Chat',
+          title: 'Shahan Bot',
           body: Padding(
             padding: const EdgeInsets.symmetric(
               horizontal: 12.0,
@@ -91,7 +91,7 @@ class _ChatScreenBodyState extends State<ChatScreenBody> {
                               decoration: BoxDecoration(
                                 color: isUser
                                     // ignore: deprecated_member_use
-                                    ? AppColors.orange.withOpacity(0.5)
+                                    ? AppColors.black.withOpacity(0.5)
                                     // ignore: deprecated_member_use
                                     : AppColors.white.withOpacity(0.15),
                                 borderRadius: BorderRadius.circular(16.r),
@@ -138,7 +138,7 @@ class _ChatScreenBodyState extends State<ChatScreenBody> {
                         ),
                       ),
                       IconButton(
-                        icon: Icon(Icons.send, color: AppColors.orange),
+                        icon: Icon(Icons.send, color: AppColors.white),
                         onPressed: () => _sendMessage(cubit),
                       ),
                     ],

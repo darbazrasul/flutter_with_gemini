@@ -1,6 +1,6 @@
+import 'package:fluter_chat_bot/theme/app_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'app_colors.dart';
 
 abstract class AppTheme {
@@ -73,17 +73,17 @@ abstract class AppTheme {
         titleMedium: TextStyle(
           fontSize: 16.sp,
           fontWeight: FontWeight.w500,
-          fontFamily: GoogleFonts.imFellEnglish().fontFamily,
+          fontFamily: FontConstants.fontFamily,
         ),
         bodyMedium: TextStyle(
           fontSize: 14.sp,
           fontWeight: FontWeight.w500,
-          fontFamily: GoogleFonts.inter().fontFamily,
+          fontFamily: FontConstants.fontFamily,
         ),
         bodyLarge: TextStyle(
           fontSize: 18.sp,
           fontWeight: FontWeight.w500,
-          fontFamily: GoogleFonts.inter().fontFamily,
+          fontFamily: FontConstants.fontFamily,
           color: AppColors.black[500],
         ),
       ),

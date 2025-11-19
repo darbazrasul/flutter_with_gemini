@@ -3,8 +3,6 @@ import 'package:fluter_chat_bot/theme/app_colors.dart';
 import 'package:fluter_chat_bot/theme/app_styles.dart';
 import 'package:flutter/material.dart';
 
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 class SharedScaffold extends StatelessWidget {
   final String title;
   final Widget body;
@@ -28,73 +26,73 @@ class SharedScaffold extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: AppColors.transparent,
         elevation: 0,
-        leading: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: CircleAvatar(
-            backgroundColor: AppColors.orange,
-            radius: 18.r,
-            child: IconButton(
-              padding: EdgeInsets.zero,
-              icon: Image.asset(AppAssets.aiBack, width: 20.w, height: 20.h),
-              onPressed: onBack ?? () {},
-              // () => Navigator.of(context).pushNamed(AppRoutes.navBar),
-            ),
-          ),
-        ),
+        // leading: Padding(
+        //   padding: const EdgeInsets.all(10.0),
+        //   child: CircleAvatar(
+        //     backgroundColor: AppColors.orange,
+        //     radius: 18.r,
+        //     child: IconButton(
+        //       padding: EdgeInsets.zero,
+        //       icon: Image.asset(AppAssets.aiBack, width: 20.w, height: 20.h),
+        //       onPressed: onBack ?? () {},
+        //       // () => Navigator.of(context).pushNamed(AppRoutes.navBar),
+        //     ),
+        //   ),
+        // ),
+        automaticallyImplyLeading: false,
         title: Text(title, style: AppStyles.medium16white),
-        centerTitle: true,
-        actions: [
-          Builder(
-            builder: (context) => IconButton(
-              icon: Image.asset(AppAssets.drawerIcon, color: AppColors.orange),
-              onPressed: () => Scaffold.of(context).openEndDrawer(),
-            ),
-          ),
-        ],
+        // centerTitle: true,
+        // actions: [
+        //   Builder(
+        //     builder: (context) => IconButton(
+        //       icon: Image.asset(AppAssets.drawerIcon, color: AppColors.orange),
+        //       onPressed: () => Scaffold.of(context).openEndDrawer(),
+        //     ),
+        //   ),
+        // ],
       ),
 
-      endDrawer: Drawer(
-        shadowColor: AppColors.black,
-        surfaceTintColor: AppColors.transparent,
-        backgroundColor: AppColors.transparent,
-        child: ListView(
-          children: [
-            DrawerHeader(
-              child: Text(
-                'Previous conversations',
-                style: AppStyles.bold20white,
-              ),
-            ),
-            ...[
-              "Hello!",
-              "Lorem ipsum dolor sit amet",
-              "Lorem ipsum dolor sit amet",
-            ].map((chat) {
-              return ListTile(
-                title: Row(
-                  children: [
-                    Icon(Icons.arrow_back_ios, color: AppColors.orange),
-                    Spacer(),
-                    Text(
-                      chat,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppStyles.font13WhiteW500,
-                    ),
-                  ],
-                ),
-                onTap: () {
-                  if (onSelectChat != null) {
-                    onSelectChat!(chat);
-                  }
-                  Navigator.of(context).pop();
-                },
-              );
-            }),
-          ],
-        ),
-      ),
-
+      // endDrawer: Drawer(
+      //   shadowColor: AppColors.black,
+      //   surfaceTintColor: AppColors.transparent,
+      //   backgroundColor: AppColors.transparent,
+      //   child: ListView(
+      //     children: [
+      //       DrawerHeader(
+      //         child: Text(
+      //           'Previous conversations',
+      //           style: AppStyles.bold20white,
+      //         ),
+      //       ),
+      //       ...[
+      //         "Hello!",
+      //         "Lorem ipsum dolor sit amet",
+      //         "Lorem ipsum dolor sit amet",
+      //       ].map((chat) {
+      //         return ListTile(
+      //           title: Row(
+      //             children: [
+      //               Icon(Icons.arrow_back_ios, color: AppColors.orange),
+      //               Spacer(),
+      //               Text(
+      //                 chat,
+      //                 maxLines: 1,
+      //                 overflow: TextOverflow.ellipsis,
+      //                 style: AppStyles.font13WhiteW500,
+      //               ),
+      //             ],
+      //           ),
+      //           onTap: () {
+      //             if (onSelectChat != null) {
+      //               onSelectChat!(chat);
+      //             }
+      //             Navigator.of(context).pop();
+      //           },
+      //         );
+      //       }),
+      //     ],
+      //   ),
+      // ),
       body: Stack(
         fit: StackFit.expand,
         children: [

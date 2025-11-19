@@ -8,7 +8,7 @@ abstract class AppAssets {
   static const String onBoardingImage3 = "assets/image/O15_29.png";
   static const String workoutBg = "assets/image/workout_bg.png";
   static const String aiBack = "assets/image/back.png";
-  static const String aiBg = "assets/image/background_ai.png";
+  static const String aiBg = "assets/image/bg.png";
   static const String drawerIcon = "assets/image/drawer_icon.png";
   static const String ai = "assets/image/ai.png";
   static const String bootChat = "assets/image/boot_chat.png";
